@@ -1,0 +1,6 @@
+.idea
+vendor/
+test
+*.log
+*.lock
+api_Json_Response_Telegram_example.json

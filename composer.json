@@ -1,0 +1,25 @@
+{
+  "name": "nimaebrazi/Postgram",
+  "description": "A telegram bot for manage post in channels or groups",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Nima Ebrazi",
+      "email": "nima.ebrazi@gmail.com"
+    }
+  ],
+  "require": {
+    "peppeocchi/php-cron-scheduler": "^1.1",
+    "longman/telegram-bot": "*",
+    "sallar/jdatetime": "dev-master",
+    "catfan/Medoo": "^1.0.2",
+    "symfony/yaml": "2.*"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "MohandesPlusBot\\" : "src/"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "config": {
+    "database": {
+      "driver": "mysql",
+      "host": "localhost",
+      "username": "XXX",
+      "password": "XXX",
+      "name": "postgram_bot",
+      "charset": "utf8",
+      "port": "3306",
+      "prefix": ""
+    },
+
+
+    "bot": {
+      "token": "XXX",
+      "name": "XXX"
+    },
+
+
+    "doctrine": {
+      "devMode": "true",
+      "entitiesPath": "/src/Doctrine/Entity"
+    }
+  }
+}
