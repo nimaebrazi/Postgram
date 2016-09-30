@@ -54,6 +54,10 @@ class SendTextCommand extends MessageHandler
     public function execute()
     {
 
+        /**
+         * user info
+         *
+         */
         $messageId = $this->getUpdate()->getMessage()->getMessageId();
         $chatId = $this->getUpdate()->getMessage()->getChat()->getId();
         $userId = $this->getUpdate()->getMessage()->getFrom()->getId();
@@ -63,10 +67,7 @@ class SendTextCommand extends MessageHandler
          * All Objects
          *
          */
-        /**
-         * user info
-         *
-         */
+
         $user = new User();
         $post = new Post();
         $time = new Time();
@@ -81,11 +82,6 @@ class SendTextCommand extends MessageHandler
             $this->runStart($user, $chatId);
         }
 
-
-        if ( $this->userResponse == Buttons::BACK )
-        {
-            $this->execBack($user, $chatId);
-        }
 
         $this->state = $user->getStateByChatId($chatId);
 
@@ -429,8 +425,7 @@ class SendTextCommand extends MessageHandler
      *
      * @internal param $this ->state
      */
-    public
-    function execBack(User $user, $chatId)
+    public function execBack(User $user, $chatId)
     {
         $user->updateState(
 //            $this->getDoublePrevious($this->state),
