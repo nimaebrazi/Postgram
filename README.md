@@ -1,7 +1,7 @@
 # Postgram
-## Send posts on telegram, certain time 
+## Send post on telegram, certain time 
 
-### Libs:
+### Libraries:
 
 1. [Telegram bot api](https://github.com/akalongman/php-telegram-bot) 
 2. [Database](https://github.com/catfan/Medoo/)
